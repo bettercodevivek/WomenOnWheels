@@ -13,8 +13,8 @@ const SearchPage = () => {
     };
 
     return (
-        <div className="bg-gray-100 min-h-screen flex items-center justify-center">
-            <div className="bg-white shadow-lg rounded-lg p-8 max-w-screen-lg w-full">
+        <div className="bg-gradient-to-r from-teal-400 via-indigo-500 to-blue-600 min-h-screen flex items-center justify-center">
+            <div className="bg-zinc-100 shadow-xl rounded-lg p-8 max-w-screen-lg w-full">
                 <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">
                     Search for a Ride
                 </h2>
