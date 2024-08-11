@@ -10,7 +10,7 @@ import AboutPage from './Client/Components/Aboutus'
 import PublishPage from './Client/Components/PublishPage'
 import LoginPage from './Client/Components/LoginPage'
 import ContactPage from './Client/Components/ContactUs'
-import AboutPage from './Client/Components/Aboutus'
+
 
 const router=createBrowserRouter([
   {
@@ -48,8 +48,8 @@ const router=createBrowserRouter([
   }
 ])
 
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router}/>
+    <RouterProvider router={router} />
   </StrictMode>
 )

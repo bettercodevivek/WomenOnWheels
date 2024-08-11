@@ -1,7 +1,7 @@
 import React from "react";
 import { Outlet,ScrollRestoration } from "react-router-dom";
-import Navbar from "./Components/Navbar";
-import Footer from "./Components/Footer";
+import Navbar from './Client/Components/Navbar'
+import Footer from './Client/Components/Footer'
 
  const Layout = () =>{
     return(
