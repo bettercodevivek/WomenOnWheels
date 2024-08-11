@@ -6,6 +6,8 @@ import Home from './Pages/Home'
 import './index.css'
 import SearchPage from './Components/SearchPage'
 import PublishPage from './Components/PublishPage'
+import LoginPage from './Components/LoginPage'
+import SignupPage from './Components/SignUpPage'
 
 
 const router=createBrowserRouter([
@@ -26,6 +28,12 @@ const router=createBrowserRouter([
         },{
           path:'publish',
           element:<PublishPage/>
+        },{
+          path:'login',
+          element:<LoginPage/>
+        },{
+          path:'signup',
+          element:<SignupPage/>
         }
     ]
   }
