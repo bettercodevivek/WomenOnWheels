@@ -2,15 +2,15 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { RouterProvider,createBrowserRouter } from 'react-router-dom'
 import Layout from './Layout'
-import Home from './Pages/Home'
+import Home from './Client/Pages/Home'
 import './index.css'
-import SearchPage from './Components/SearchPage'
-import PublishPage from './Components/PublishPage'
-import LoginPage from './Components/LoginPage'
-import SignupPage from './Components/SignUpPage'
-import AboutPage from './Components/Aboutus'
-import ContactPage from './Components/ContactUs'
-
+import SearchPage from './Client/Components/SearchPage'
+import SignupPage from './Client/Components/SignUpPage'
+import AboutPage from './Client/Components/Aboutus'
+import PublishPage from './Client/Components/PublishPage'
+import LoginPage from './Client/Components/LoginPage'
+import ContactPage from './Client/Components/ContactUs'
+import AboutPage from './Client/Components/Aboutus'
 
 const router=createBrowserRouter([
   {
@@ -48,9 +48,8 @@ const router=createBrowserRouter([
   }
 ])
 
-
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-  <RouterProvider router={router}/>
-  </StrictMode>,
+    <RouterProvider router={router}/>
+  </StrictMode>
 )
