@@ -10,18 +10,18 @@ export default function Navbar() {
     };
 
     return (
-        <header className="relative">
-            <nav className="bg-gradient-to-r from-teal-500 to-blue-500 p-4">
-                <div className="flex items-center justify-between mx-auto max-w-screen-xl">
+        <header className="fixed top-0 left-0 right-0 z-50">
+            <nav className="bg-inherit bg-opacity-30 backdrop-blur-md  py-4">
+                <div className="flex items-center justify-between mx-auto max-w-screen-xl px-4">
                     <Link to="/" className="flex items-center space-x-4">
                         <img
-                            src="https://i.postimg.cc/1tt2wSYZ/LHD-Human-Care-Logo-1.webp"
+                            src="/women-svgrepo-com.svg"
                             className="h-12 lg:h-16"
                             alt="Logo"
                         />
                         <div className="hidden md:flex flex-col text-white">
                             <div className="text-xl font-bold">WomenOnWheels</div>
-                            <div className="text-sm">Crafting Health, Shaping Future</div>
+                            <div className="text-sm">Secure, Supportive, and Seamless</div>
                         </div>
                     </Link>
 
@@ -53,7 +53,7 @@ export default function Navbar() {
                                         `block py-2 px-4 rounded-full transition-colors duration-300 ${isActive ? "bg-white text-teal-500" : "hover:bg-white hover:text-teal-500"}`
                                     }
                                 >
-                                    Corporate Profile
+                                    About Us
                                 </NavLink>
                             </li>
                             <li>
@@ -62,7 +62,7 @@ export default function Navbar() {
                                         `block py-2 px-4 rounded-full transition-colors duration-300 ${isActive ? "bg-white text-teal-500" : "hover:bg-white hover:text-teal-500"}`
                                     }
                                 >
-                                    Our Vision
+                                    Contact Us
                                 </NavLink>
                             </li>
                             <li>
@@ -71,7 +71,7 @@ export default function Navbar() {
                                         `block py-2 px-4 rounded-full transition-colors duration-300 ${isActive ? "bg-white text-teal-500" : "hover:bg-white hover:text-teal-500"}`
                                     }
                                 >
-                                    Our Products
+                                    SignUp
                                 </NavLink>
                             </li>
                             <li>
@@ -80,7 +80,7 @@ export default function Navbar() {
                                         `block py-2 px-4 rounded-full transition-colors duration-300 ${isActive ? "bg-white text-teal-500" : "hover:bg-white hover:text-teal-500"}`
                                     }
                                 >
-                                    Contact Us
+                                    Login
                                 </NavLink>
                             </li>
                         </ul>
