@@ -1,7 +1,8 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { RouterProvider,createBrowserRouter } from 'react-router-dom'
-import Layout from './Layout.jsx';
+import Layout from './Layout'
+import Home from './Pages/Home'
 import './index.css'
 
 
@@ -18,21 +19,6 @@ const router=createBrowserRouter([
           path:'home',
           element:<Home/>
         },
-        {
-          path:'vision',
-          element:<Vision/>
-        },
-        {
-          path:'profile',
-          element:<Profile/>
-        },{
-          path:'products',
-          element:<Products/>
-        },
-        {
-          path:'contact',
-          element:<Contact/>
-        }
     ]
   }
 ])

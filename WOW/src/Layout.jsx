@@ -1,7 +1,9 @@
 import React from "react";
 import { Outlet,ScrollRestoration } from "react-router-dom";
+import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
 
-export const Layout = () =>{
+ const Layout = () =>{
     return(
      <>
      <ScrollRestoration/>
@@ -11,3 +13,5 @@ export const Layout = () =>{
      </>
     );
 }
+
+export default Layout;
