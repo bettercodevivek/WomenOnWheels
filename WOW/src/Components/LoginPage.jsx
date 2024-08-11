@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
 
 const LoginPage = () => {
+    const [loginMethod, setLoginMethod] = useState('email');
     const [email, setEmail] = useState('');
+    const [mobileNumber, setMobileNumber] = useState('');
     const [password, setPassword] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Handle the login logic here
-        console.log({ email, password });
+        // Handle login logic here
+        console.log({ loginMethod, email, mobileNumber, password });
     };
 
     return (
@@ -17,34 +19,87 @@ const LoginPage = () => {
                     Login
                 </h2>
                 <form onSubmit={handleSubmit} className="space-y-6">
-                    <div>
-                        <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                    <div className="flex items-center space-x-4 mb-6">
+                        <button
+                            type="button"
+                            onClick={() => setLoginMethod('email')}
+                            className={`py-2 px-4 text-sm font-semibold rounded-lg ${loginMethod === 'email' ? 'bg-teal-500 text-white' : 'bg-gray-200 text-gray-700'} transition-all duration-300`}
+                        >
                             Email
-                        </label>
-                        <input
-                            type="email"
-                            id="email"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                            placeholder="Enter your email"
-                            className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-teal-500 focus:border-teal-500"
-                            required
-                        />
+                        </button>
+                        <button
+                            type="button"
+                            onClick={() => setLoginMethod('mobile')}
+                            className={`py-2 px-4 text-sm font-semibold rounded-lg ${loginMethod === 'mobile' ? 'bg-teal-500 text-white' : 'bg-gray-200 text-gray-700'} transition-all duration-300`}
+                        >
+                            Mobile Number
+                        </button>
                     </div>
-                    <div>
-                        <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-1">
-                            Password
-                        </label>
-                        <input
-                            type="password"
-                            id="password"
-                            value={password}
-                            onChange={(e) => setPassword(e.target.value)}
-                            placeholder="Enter your password"
-                            className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-teal-500 focus:border-teal-500"
-                            required
-                        />
-                    </div>
+
+                    {loginMethod === 'email' ? (
+                        <>
+                            <div>
+                                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                                    Email
+                                </label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    value={email}
+                                    onChange={(e) => setEmail(e.target.value)}
+                                    placeholder="Enter your email"
+                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-teal-500 focus:border-teal-500"
+                                    required
+                                />
+                            </div>
+                            <div>
+                                <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-1">
+                                    Password
+                                </label>
+                                <input
+                                    type="password"
+                                    id="password"
+                                    value={password}
+                                    onChange={(e) => setPassword(e.target.value)}
+                                    placeholder="Enter your password"
+                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-teal-500 focus:border-teal-500"
+                                    required
+                                />
+                            </div>
+                        </>
+                    ) : (
+                        <>
+                            <div>
+                                <label htmlFor="mobileNumber" className="block text-sm font-medium text-gray-700 mb-1">
+                                    Mobile Number
+                                </label>
+                                <input
+                                    type="tel"
+                                    id="mobileNumber"
+                                    value={mobileNumber}
+                                    onChange={(e) => setMobileNumber(e.target.value)}
+                                    placeholder="+1 123-456-7890"
+                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-teal-500 focus:border-teal-500"
+                                    required
+                                />
+                            </div>
+                            <div>
+                                <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-1">
+                                    Password
+                                </label>
+                                <input
+                                    type="password"
+                                    id="password"
+                                    value={password}
+                                    onChange={(e) => setPassword(e.target.value)}
+                                    placeholder="Enter your password"
+                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-teal-500 focus:border-teal-500"
+                                    required
+                                />
+                            </div>
+                        </>
+                    )}
+
                     <div className="text-center mt-6">
                         <button
                             type="submit"

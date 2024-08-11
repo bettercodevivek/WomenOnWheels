@@ -48,7 +48,7 @@ export default function Navbar() {
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink to='/profile'
+                                <NavLink to='/aboutus'
                                     className={({ isActive }) =>
                                         `block py-2 px-4 rounded-full transition-colors duration-300 ${isActive ? "bg-white text-teal-500" : "hover:bg-white hover:text-teal-500"}`
                                     }
@@ -57,7 +57,7 @@ export default function Navbar() {
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink to='/vision'
+                                <NavLink to='/contact'
                                     className={({ isActive }) =>
                                         `block py-2 px-4 rounded-full transition-colors duration-300 ${isActive ? "bg-white text-teal-500" : "hover:bg-white hover:text-teal-500"}`
                                     }
@@ -66,7 +66,7 @@ export default function Navbar() {
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink to='/products'
+                                <NavLink to='/signup'
                                     className={({ isActive }) =>
                                         `block py-2 px-4 rounded-full transition-colors duration-300 ${isActive ? "bg-white text-teal-500" : "hover:bg-white hover:text-teal-500"}`
                                     }
@@ -75,7 +75,7 @@ export default function Navbar() {
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink to='/contact'
+                                <NavLink to='/login'
                                     className={({ isActive }) =>
                                         `block py-2 px-4 rounded-full transition-colors duration-300 ${isActive ? "bg-white text-teal-500" : "hover:bg-white hover:text-teal-500"}`
                                     }

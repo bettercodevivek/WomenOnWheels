@@ -8,6 +8,8 @@ import SearchPage from './Components/SearchPage'
 import PublishPage from './Components/PublishPage'
 import LoginPage from './Components/LoginPage'
 import SignupPage from './Components/SignUpPage'
+import AboutPage from './Components/Aboutus'
+import ContactPage from './Components/ContactUs'
 
 
 const router=createBrowserRouter([
@@ -34,6 +36,13 @@ const router=createBrowserRouter([
         },{
           path:'signup',
           element:<SignupPage/>
+        },
+        {
+          path:'aboutus',
+          element:<AboutPage/>
+        },{
+          path:'contact',
+          element:<ContactPage/>
         }
     ]
   }
