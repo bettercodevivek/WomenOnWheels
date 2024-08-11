@@ -14,7 +14,7 @@ const LandingPage = () => {
             />
 
             {/* Main Content */}
-            <div className="relative top-12 z-10 flex flex-col items-center justify-center min-h-screen text-center py-10 px-6 lg:px-12">
+            <div className="relative top-0 z-10 flex flex-col items-center justify-center min-h-screen text-center py-10 px-6 lg:px-12">
                 <motion.h1
                     className="text-4xl lg:text-6xl font-bold text-white mb-6"
                     initial={{ opacity: 0, y: -50 }}

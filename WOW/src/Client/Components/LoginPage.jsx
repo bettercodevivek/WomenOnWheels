@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const LoginPage = () => {
     const [loginMethod, setLoginMethod] = useState('email');
@@ -109,6 +110,14 @@ const LoginPage = () => {
                         </button>
                     </div>
                 </form>
+                <div className="text-center mt-6">
+                    <p className="text-sm text-gray-600">
+                        Don't have an account?{' '}
+                        <Link to="/signup" className="text-teal-500 font-semibold">
+                            Sign Up
+                        </Link>
+                    </p>
+                </div>
             </div>
         </div>
     );
