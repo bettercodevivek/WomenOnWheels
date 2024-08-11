@@ -20,7 +20,7 @@ export default function Navbar() {
                             alt="Logo"
                         />
                         <div className="hidden md:flex flex-col text-white">
-                            <div className="text-xl font-bold">LHD Human Care</div>
+                            <div className="text-xl font-bold">WomenOnWheels</div>
                             <div className="text-sm">Crafting Health, Shaping Future</div>
                         </div>
                     </Link>
